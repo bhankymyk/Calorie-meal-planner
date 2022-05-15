@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
+import MealList from './Component/MealList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Button} from 'react-bootstrap';
-import MealList from './Component/MealList';
 // import { useState } from 'react';
 
 function App() {
-  const [mealData, setMealData] = useState (null)
-  const [calories, setCalories] = useState (2000)
+  const [mealData, setMealData] = useState (null);
+  const [calories, setCalories] = useState (2000);
 
   function getMealData() {
     fetch(
@@ -18,10 +18,10 @@ function App() {
     })
     .catch(() => {
       console.log("error");
-    })
+    });
   }
 
-  function handleChange (e) {
+  function handleChange(e) {
     setCalories(e.target.value)
   } 
 
@@ -30,7 +30,7 @@ function App() {
     <Container>
 <Row>
 <div className="App">
-      <div className=''>
+      <div className="main">
         <input type="number" placeholder="Calories" onChange={handleChange}/>
       <Button onClick={getMealData} className="btn btn-success btn-block" >
 Get daily meal plan
