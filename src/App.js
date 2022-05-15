@@ -24,6 +24,8 @@ function App() {
   function handleChange (e) {
     setCalories(e.target.value)
   } 
+
+  
   return (
     <Container>
 <Row>
@@ -38,8 +40,6 @@ Get daily meal plan
       </div>
   </Row>      
     </Container>
-    
-    
   );
 }
 
