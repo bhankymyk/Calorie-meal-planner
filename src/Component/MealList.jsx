@@ -5,7 +5,7 @@ export default function MealList({ mealData }) {
     const nutrients = mealData.nutrients;
 
     return (
-    <div>
+    <div className="mr-3 col-sm-6 col-md-4">
         <div className='mealmain'>
             <h1>Macros</h1>
             <ul>

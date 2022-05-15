@@ -18,8 +18,7 @@ export default function Meal({ meal }) {
 
 
   return (
-    <div className="main">
-        <div className="col-sm-6 col-md-3">
+        <div className="mr-3 col-sm-6 col-md-4">
             <h1>{meal.title} </h1>
             <img src={imageUrl} alt="recipe"/>
             <ul>
@@ -29,6 +28,5 @@ export default function Meal({ meal }) {
 
             <a href={meal.sourceUrl}><button className="btn btn-success btn-block">Go to Recipe</button></a>
         </div>
-    </div>
   )
 }
