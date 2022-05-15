@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import MealList from './Component/MealList';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Container, Row, Button} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Button} from 'react-bootstrap';
 // import { useState } from 'react';
 
 function App() {
@@ -27,17 +27,19 @@ function App() {
 
   
   return (
-    
+    <Container>
+<Row>
 <div className="App">
       <div className="main">
         <input type="number" placeholder="Calories" onChange={handleChange}/>
-      <button onClick={getMealData} className="btn btn-success btn-block" >
+      <Button onClick={getMealData} className="btn btn-success btn-block" >
 Get daily meal plan
-      </button>
+      </Button>
       </div>
       {mealData && <MealList mealData={mealData} />}
       </div>
-  
+  </Row>      
+    </Container>
   );
 }
 
