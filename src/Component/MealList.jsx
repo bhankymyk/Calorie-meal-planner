@@ -5,7 +5,7 @@ export default function MealList({ mealData }) {
     const nutrients = mealData.nutrients;
 
     return (
-    <div className="mr-3 col-sm-6 col-md-4">
+    <div className="">
         <div className='mealmain'>
             <h1>Macros</h1>
             <ul>
@@ -16,11 +16,11 @@ export default function MealList({ mealData }) {
             </ul>
         </div>
 
-        <section>
+        <div className="foods d-flex justify-content-between">
             {mealData.meals.map((meal) => {
                 return <Meal key={meal.id} meal={meal} />
             })}
-        </section>
+        </div>
     </div>
   );
 }

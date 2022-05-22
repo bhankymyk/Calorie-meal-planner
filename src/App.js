@@ -27,18 +27,16 @@ function App() {
 
   
   return (
-    <Container>
+    <Container fluid>
 <Row>
-<div className="App">
       <div className="main">
-        <input type="number" placeholder="Calories" onChange={handleChange}/>
+        <input type="number" placeholder="Calories" onChange={handleChange}/> <br/> <br/> 
       <Button onClick={getMealData} className="btn btn-success btn-block" >
-Get daily meal plan
+Get daily meal plans
       </Button>
       </div>
-      {mealData && <MealList mealData={mealData} />}
-      </div>
-  </Row>      
+      </Row>
+        {mealData && <MealList mealData={mealData} />}     
     </Container>
   );
 }
