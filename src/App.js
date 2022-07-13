@@ -29,8 +29,8 @@ function App() {
   return (
     <Container fluid>
 <Row>
-      <div className="main ">
-        <input type="number" className='w-50' placeholder="Calories" onChange={handleChange}/>
+      <div className="main mt-2">
+        <input type="number" className='' placeholder="Calories e.g: 400" onChange={handleChange}/>
       <Button onClick={getMealData} className="btn btn-success btn-block" >
 Get daily meal plans
       </Button>
