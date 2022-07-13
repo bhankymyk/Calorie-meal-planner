@@ -16,7 +16,7 @@ export default function MealList({ mealData }) {
             </ul>
         </div>
 
-        <div className="foods d-flex justify-content-between">
+        <div className="foods">
             {mealData.meals.map((meal) => {
                 return <Meal key={meal.id} meal={meal} />
             })}

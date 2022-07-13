@@ -18,6 +18,9 @@ code {
   display: inline;
   /* white-space: nowrap; */
 }
+input{
+  margin-right: 0.5em !important ;
+}
 /* h1 {
   align-items: center;
   white-space: nowrap;

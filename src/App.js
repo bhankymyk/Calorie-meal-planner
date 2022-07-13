@@ -30,7 +30,7 @@ function App() {
     <Container fluid>
 <Row>
       <div className="main">
-        <input type="number" placeholder="Calories" onChange={handleChange}/> <br/> <br/> 
+        <input type="number" placeholder="Calories" onChange={handleChange}/>
       <Button onClick={getMealData} className="btn btn-success btn-block" >
 Get daily meal plans
       </Button>
