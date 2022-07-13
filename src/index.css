@@ -30,3 +30,11 @@ input{
   /* display: inline; */
   white-space: nowrap;
 }
+
+/* Mobile phone screen adjusted */
+
+@media(max-width:768px) {
+  .main{
+      white-space: nowrap;
+  }
+}
