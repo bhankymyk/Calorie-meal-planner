@@ -37,4 +37,8 @@ input{
   .main{
       white-space: nowrap;
   }
+  img{
+    width: 40vh;
+  }
+  
 }

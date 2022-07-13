@@ -8,7 +8,7 @@ export default function MealList({ mealData }) {
     <div className="">
         <div className='mealmain'>
             <h1>Macros</h1>
-            <ul>
+            <ul className='d-flex' >
                 <li>Calories: {nutrients.calories.toFixed(0)}</li>
                 <li>Carbohydrates: {nutrients.carbohydrates.toFixed(0)}</li>
                 <li>Fat: {nutrients.fat.toFixed(0)}</li>
