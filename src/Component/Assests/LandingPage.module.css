@@ -1,0 +1,25 @@
+.Lbody{
+    background: #198754;
+    height: 100vh;
+}
+h2{
+    color: white;
+}
+.mBody {
+    margin-top: 100px;
+    text-align: center;
+}
+.mBody h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    padding: 30px;
+}
+p{
+    color: white;
+    text-align: center;
+}
+.mImg{
+    text-align: center;
+    margin-top: 50px;
+}

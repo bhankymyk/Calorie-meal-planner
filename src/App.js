@@ -1,43 +1,21 @@
-import React, {useState} from 'react';
-import MealList from './Component/MealList';
+import React from 'react';
+// import { Route} from 'react-router-dom';
+import {Route} from "react-router-dom";
+// import MealList from './Component/MealList';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Button} from 'react-bootstrap';
-// import { useState } from 'react';
+import LandingPage from './Component/LandingPage';
+import HomePage from './Component/HomePage';
+
 
 function App() {
-  const [mealData, setMealData] = useState (null);
-  const [calories, setCalories] = useState (2000);
-
-  function getMealData() {
-    fetch(
-      `https://api.spoonacular.com/mealplanner/generate?apiKey=600c1c546f094df4b60cd6aca43ead55&timeFrame=day&targetCalories=${calories}`
-    )
-    .then((response) => response.json())
-    .then((data) => {
-      setMealData(data);
-    })
-    .catch(() => {
-      console.log("error");
-    });
-  }
-
-  function handleChange(e) {
-    setCalories(e.target.value)
-  } 
-
-  
   return (
-    <Container fluid>
-<Row>
-      <div className="main mt-2">
-        <input type="number" className='' placeholder="Calories e.g: 400" onChange={handleChange}/>
-      <Button onClick={getMealData} className="btn btn-success btn-block" >
-Get daily meal plans
-      </Button>
+    <>
+      <div>
+          {/* <Route path="/" component={App} /> */}
+          <Route path="/" exact component={LandingPage} />
+          <Route path="/HomePage" exact component={HomePage} />
       </div>
-      </Row>
-        {mealData && <MealList mealData={mealData} />}     
-    </Container>
+    </>
   );
 }
 
