@@ -33,6 +33,10 @@ input{
   /* display: inline; */
   white-space: nowrap;
 }
+.mains p{
+  color: black;
+  text-align: left;
+}
 
 /* Mobile phone screen adjusted */
 

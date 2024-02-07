@@ -35,6 +35,11 @@ function App() {
 Get daily meal plans
       </Button>
       </div>
+      <div className='mains mt-2 text-center'>
+      <p> Ps: It helps to prepare meals based on calories <br/>
+      it also shows the amount of nurtients for  <br />
+      Carbohydrate, protein and fat. <br /> it also show recipes and the method of cooking it. </p>
+      </div>
       </Row>
         {mealData && <MealList mealData={mealData} />}     
     </Container>
