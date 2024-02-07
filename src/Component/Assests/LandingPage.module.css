@@ -6,14 +6,18 @@ h2{
     color: white;
 }
 .mBody {
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
 }
-.mBody h2 {
+.mBody h3{
     font-size: 50px;
     font-weight: 600;
     line-height: 50px;
-    padding: 30px;
+    color: #fff;
+    /* padding: 30px; */
+}
+.mBody h4{
+    color: white;
 }
 p{
     color: white;
@@ -21,5 +25,31 @@ p{
 }
 .mImg{
     text-align: center;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    background: #fff;
 }
+.foot{
+ background: #198754;   
+}
+ul li {
+    list-style: none;
+  }
+  li {
+    display: inline;
+    padding: 10px;
+  }
+  .footer ul li{
+    color: #fff;
+  }
+  .secondFooter ul li{
+    list-style: none;
+    display: block;
+    color: whitesmoke;
+  }
+
+  @media only screen and (max-width:767px) {
+    li {
+        display: block;
+      }
+  }
+  

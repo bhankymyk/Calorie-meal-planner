@@ -4,7 +4,9 @@ import React from 'react';
 import { Container, Row} from 'react-bootstrap';
 import styles from '../Component/Assests/LandingPage.module.css';
 import image from '../Component/Assests/Mealy.jpg';
+// import Footer from './Component/Footer';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 function LandingPage() {
   return (
@@ -12,7 +14,7 @@ function LandingPage() {
       <div className={styles.Lbody}>
         <Container fluid>
       <Row>
-      <div className="mt-4">
+      <div className="">
       <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">MEALY</a>
@@ -45,7 +47,8 @@ function LandingPage() {
 
       <Row>
         <div className={`col ${styles.mBody}`}>
-          <h2> Get a Personalized Meal <br/> Plan in Just a Few Clicks</h2>
+          <h3>Are You Finding It Hard to Plan Your Meal Based On Calorie ?</h3>
+          {/* <h4> Get a Personalized Meal <br/> Plan in Just a Few Clicks</h4> */}
         </div>
         <div className="">
           <p>Experience a more sustainable and easy way to <br/> eat healthy and manage yourself </p>
@@ -58,14 +61,14 @@ function LandingPage() {
       </Row>
 
       <Row>
-        <div className={`col ${styles.mImg}`}>
+        <div className={`col mt-5 ${styles.mImg}`}>
           <img src={image}  className='img-fluid' alt="hhh" />
         </div>
       </Row>
-      <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci error perferendis fuga delectus, maxime numquam vero suscipit, deleniti corporis consequuntur corrupti rerum vitae saepe debitis accusantium id ipsum? Mollitia, doloribus.
-      </div>
     </Container> 
+    <div className=''>
+    <Footer/>
+    </div>
       </div>
   )
 }
