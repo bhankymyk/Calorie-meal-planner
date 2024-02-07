@@ -1,8 +1,7 @@
 import React from 'react';
-// import { Route} from 'react-router-dom';
-import {Route} from "react-router-dom";
-// import MealList from './Component/MealList';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import {Route} from "react-router-dom";
 import LandingPage from './Component/LandingPage';
 import HomePage from './Component/HomePage';
 
