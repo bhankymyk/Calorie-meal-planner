@@ -17,28 +17,33 @@ function LandingPage() {
       <div className="">
       <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">MEALY</a>
+    <Link to="/" > 
+    <a class="navbar-brand tHead" >MEALY</a>
+     </Link>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+        <Link to="/mealy">
+        <a class="nav-link" >Meal Planner</a>
+        </Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+        <Link to="/about">
+          <a class="nav-link" >About</a>
+        </Link>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
+
       </ul>
-      <span class="navbar-text">
+      {/* <span class="navbar-text">
         Navbar
       </span>
       <span class="navbar-text">
         Navbar
-      </span>
+      </span> */}
     </div>
   </div>
 </nav>
@@ -54,7 +59,7 @@ function LandingPage() {
           <p>Experience a more sustainable and easy way to <br/> eat healthy and manage yourself </p>
         </div>
         <div className={`text-center ${styles.button}`}>
-          <Link to="/homePage">
+          <Link to="/mealy">
           <button className='btn btn-dark'>Click here to find out how</button>
           </Link>
         </div>

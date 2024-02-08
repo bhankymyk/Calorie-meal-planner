@@ -38,6 +38,17 @@ input{
   text-align: left;
 }
 
+.nav-item a{
+  text-decoration: none;
+ } 
+ a .tHead{
+  text-decoration: none;
+ }
+ .nav-item a.Link-exact-active {
+  color: #42b983;
+}
+
+
 /* Mobile phone screen adjusted */
 
 @media(max-width:768px) {
@@ -50,5 +61,5 @@ input{
   input{
     width: 50%;
   }
-  
+ 
 }

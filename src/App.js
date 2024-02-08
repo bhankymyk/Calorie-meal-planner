@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import {Route} from "react-router-dom";
 import LandingPage from './Component/LandingPage';
-import HomePage from './Component/HomePage';
+import Mealy from './Component/Mealy';
+import About from './Component/About';
 
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
       <div>
           {/* <Route path="/" component={App} /> */}
           <Route path="/" exact component={LandingPage} />
-          <Route path="/HomePage" exact component={HomePage} />
+          <Route path="/mealy" exact component={Mealy} />
+          <Route path="/About" exact component={About} />
       </div>
     </>
   );

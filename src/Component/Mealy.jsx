@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import MealList from './MealList';
+// import Footer from './Footer';
+import Header from './Header';
 import { Container, Row, Button} from 'react-bootstrap';
 
 function App() {
@@ -29,19 +31,16 @@ function App() {
 
     <Container fluid>
 <Row>
+  <Header/>
       <div className="main mt-4">
         <input type="number" className='' placeholder="Calories e.g: 400" onChange={handleChange}/>
       <Button onClick={getMealData} className="btn btn-success btn-block" >
 Get daily meal plans
       </Button>
       </div>
-      <div className='mains mt-2 text-center'>
-      <p> Ps: It helps to prepare meals based on calories <br/>
-      it also shows the amount of nurtients for  <br />
-      Carbohydrate, protein and fat. <br /> it also show recipes and the method of cooking it. </p>
-      </div>
       </Row>
         {mealData && <MealList mealData={mealData} />}     
+        {/* <Footer/> */}
     </Container>
     </>
   );
